@@ -1,0 +1,10 @@
+# python api support
+fastapi
+# lightning-fast ASGI (Asynchronous Server Gateway Interface) web server for Python
+uvicorn[standard]
+# multi container support for python for azure
+azure-functions
+# azure storage blob
+azure-storage-blob
+#azure credentials
+azure-identity
