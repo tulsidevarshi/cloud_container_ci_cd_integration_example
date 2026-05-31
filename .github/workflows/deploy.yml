@@ -28,4 +28,8 @@ jobs:
     - name: Update Azure Function Container Image
       run: | 
         az webapp config container set --resource-group myResourceGroup --name fastapi-function-app-devarshi --container-image-name "myacrdevarshi.azurecr.io/fastapi-function:latest" --container-registry-url "https://myacrdevarshi.azurecr.io"
+
+    - name: Force Instant Container Layer Pull (Flush Cache)
+      run: |
+        az functionapp restart --resource-group myResourceGroup --name fastapi-function-app-devarshi
         
